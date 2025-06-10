@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sepidar Trading - Products</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1 id="brand-name">Sepidar Trading</h1>
+  <nav>
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('fa')">فارسی</button>
+    <button onclick="switchLang('ar')">العربية</button>
+  </nav>
+</header>
+
+<main>
+  <section id="products">
+    <h2 data-en="Our Products" data-fa="محصولات ما" data-ar="منتجاتنا">Our Products</h2>
+    <article class="product">
+      <img src="dates.jpg" alt="Dates" width="300" />
+      <h3 data-en="Dates" data-fa="خرما" data-ar="التمر">Dates</h3>
+      <p data-en="Sweet and delicious dates from the Middle East."
+         data-fa="خرمای شیرین و خوشمزه از خاورمیانه."
+         data-ar="تمر حلو ولذيذ من الشرق الأوسط.">
+         Sweet and delicious dates from the Middle East.</p>
+      <p data-en="Price: $10 per kg" data-fa="قیمت: ۱۰ دلار به ازای هر کیلو" data-ar="السعر: ١٠ دولارات للكيلو">
+        Price: $10 per kg</p>
+    </article>
+  </section>
+</main>
+
+<script src="lang.js"></script>
+</body>
+</html>
