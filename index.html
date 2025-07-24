@@ -9,30 +9,26 @@
       font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4fff4;
+      background-color: #e9f9e9;
       color: #333;
     }
     header {
-      background: linear-gradient(to right, #88cc88, #ffcc88);
-      padding: 40px 20px;
-      text-align: center;
-      color: #003300;
+      background-color: #ffffff;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #cceccc;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
+    header img {
+      height: 60px;
     }
-    nav {
-      background: #ffffff;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    nav a {
+    header nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #006600;
+      color: #2d6a4f;
       font-weight: bold;
+      font-size: 1em;
     }
     section {
       padding: 40px 20px;
@@ -40,97 +36,102 @@
       margin: auto;
     }
     h2 {
-      color: #006600;
+      color: #2d6a4f;
       margin-bottom: 20px;
+      font-size: 1.8em;
     }
-    .product-list {
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
-    .product-item {
+    .product-card {
       background: #ffffff;
-      border: 1px solid #ddd;
+      border: 1px solid #d9f2d9;
       border-radius: 10px;
-      padding: 20px;
-      width: calc(33% - 20px);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      overflow: hidden;
     }
-    .product-item img {
-      max-width: 100%;
-      border-radius: 8px;
+    .product-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .product-card .content {
+      padding: 15px;
+    }
+    .product-card h3 {
+      margin-top: 0;
+      color: #2d6a4f;
+    }
+    .contact-info {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      line-height: 1.8;
     }
     footer {
-      background: #e6ffe6;
+      background: #dff5df;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
       color: #444;
     }
-    .contact {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .highlight {
-      background: #fff8e6;
-      border-left: 6px solid #ffbb33;
-      padding: 10px 15px;
-      margin: 20px 0;
-      font-style: italic;
-    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sepidar Trade</h1>
-    <p>Premium Ribbon Grade Tragacanth Gum from Iran</p>
+    <img src="logo.png" alt="Sepidar Logo" />
+    <nav>
+      <a href="index.html">English</a>
+      <a href="fa.html">فارسی</a>
+      <a href="ar.html">العربية</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="index.html">English</a> |
-    <a href="fa.html">فارسی</a> |
-    <a href="ar.html">العربية</a>
-  </nav>
 
   <section id="products">
     <h2>Our Products</h2>
-    <div class="product-list">
-      <div class="product-item">
-        <img src="82795237-72109840.jpg" alt="Pure Ribbon Tragacanth" />
-        <h3>Ribbon Tragacanth - Premium</h3>
-        <p>100% natural, hand-selected, clean label quality tragacanth. Available in 100g, 250g, 1kg, and 5kg packs.</p>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="82795237-72109840.jpg" alt="Ribbon Tragacanth">
+        <div class="content">
+          <h3>Ribbon Tragacanth</h3>
+          <p>Premium quality, hand-selected, 100% natural. Available in 100g, 250g, 1kg, and bulk packaging.</p>
+        </div>
       </div>
-      <div class="product-item">
-        <img src="کتیرا-صدفی-scaled.jpg" alt="Shell Form Tragacanth" />
-        <h3>Shell Form Tragacanth</h3>
-        <p>Refined gum in shell form, suitable for cosmetic and pharmaceutical preparations. Available in export-grade packs.</p>
+      <div class="product-card">
+        <img src="کتیرا-صدفی-scaled.jpg" alt="Shell Form Tragacanth">
+        <div class="content">
+          <h3>Shell Form Tragacanth</h3>
+          <p>Ideal for pharmaceutical and cosmetic use. Refined and export-ready packs.</p>
+        </div>
       </div>
-      <div class="product-item">
-        <img src="خواص-کتیرا.jpg" alt="Gelled Tragacanth Sample" />
-        <h3>Gelled Sample</h3>
-        <p>Hydrated tragacanth to show natural gelling power. Provided as sample for testing purposes upon request.</p>
+      <div class="product-card">
+        <img src="خواص-کتیرا.jpg" alt="Gelled Tragacanth">
+        <div class="content">
+          <h3>Gelled Sample</h3>
+          <p>Demonstrates gelling power of tragacanth. Sample available upon request.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="about">
-    <h2>About Sepidar</h2>
+    <h2>About Us</h2>
     <p>
-      Sepidar Trade is dedicated to exporting top-quality tragacanth gum from Iran to global markets. We specialize in ribbon-grade tragacanth with full certifications and laboratory reports.
+      Sepidar Trade specializes in exporting ribbon-grade tragacanth gum from Iran. Backed by lab reports and export certifications.
     </p>
-    <div class="highlight">
-      Iran supplies over 80% of the world’s tragacanth gum – and we are proud to bring this natural treasure to your hands.
-    </div>
     <p>
-      Our gum is used in pharmaceutical syrups and tablets, natural foods, sauces, yogurt, and organic cosmetics. All products are carefully inspected, packed, and ready for export with full documentation.
+      Iran supplies over 80% of the world's tragacanth. Our gum is used in food, pharma, cosmetics — and valued for purity and performance.
     </p>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <div class="contact">
+    <div class="contact-info">
       <p><strong>Email:</strong> <a href="mailto:info@sepidartrd.com">info@sepidartrd.com</a></p>
       <p><strong>Phone:</strong> <a href="tel:+989139729771">+98 913 972 9771</a></p>
       <p><strong>Address:</strong> Isfahan, Iran</p>
