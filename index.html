@@ -8,76 +8,82 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fdfdf8;
-      color: #333;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      background-color: #e8f5e9;
-      border-bottom: 1px solid #c8e6c9;
-    }
-    .logo img.small-logo {
-      height: 60px;
-      width: auto;
-    }
-    nav ul.nav-menu {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      padding: 0;
-      margin: 0;
-    }
-    nav ul.nav-menu li a {
-      text-decoration: none;
-      color: #2e7d32;
-      font-weight: bold;
-    }
-    main {
-      padding: 2rem;
-    }
-    .welcome {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .info-block {
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.8;
-    }
-    footer {
-      background-color: #e8f5e9;
-      padding: 1rem 2rem;
-      text-align: center;
-      border-top: 1px solid #c8e6c9;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #00695c;
-    }
-  
-    .welcome.highlighted {
-      background-color: #dcedc8;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-bottom: 2rem;
-      border-radius: 12px;
-    }
-    .welcome.highlighted h1 {
-      color: #1b5e20;
-      font-size: 2rem;
-    }
-    .welcome.highlighted p {
-      color: #33691e;
-      font-size: 1.1rem;
-    }
-
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #f1f8e9);
+    color: #2e3d2f;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #e0f2f1;
+    border-bottom: 1px solid #b2dfdb;
+  }
+  .logo img.small-logo {
+    height: 60px;
+    width: auto;
+  }
+  nav ul.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul.nav-menu li a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+  }
+  main {
+    padding: 2rem;
+  }
+  .main-title {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .main-title h1 {
+    font-size: 2.5rem;
+    color: #33691e;
+  }
+  .main-title p {
+    color: #558b2f;
+    font-size: 1.2rem;
+  }
+  .welcome.highlighted {
+    background-color: #f0f4c3;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+  }
+  .welcome.highlighted h1 {
+    color: #1b5e20;
+    font-size: 2rem;
+  }
+  .welcome.highlighted p {
+    color: #33691e;
+    font-size: 1.1rem;
+  }
+  .info-block {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  footer {
+    background-color: #e0f2f1;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid #b2dfdb;
+    font-size: 0.9rem;
+  }
+  a {
+    color: #00695c;
+  }
 </style>
 
 </head>
@@ -93,9 +99,9 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li class="lang-select">
-          <a href="index-fa.html">FA</a> |
-          <a href="index-ar.html">AR</a> |
-          <a href="index-en.html">EN</a>
+          <a href="./index-fa.html">FA</a> |
+          <a href="./index-ar.html">AR</a> |
+          <a href="./index.html">EN</a>
         </li>
       </ul>
     </nav>
@@ -103,14 +109,16 @@
 
   <main>
     <section class="main-title">
-      <h1>Tragacanth Gum</h1>
-      <p>Used in food, pharma, and cosmetics</p>
+  <h1>Tragacanth Gum</h1>
+  <p>Used in food, pharma, and cosmetics</p>
     </section>
+    
     
     <section class="welcome highlighted">
       <h1>Welcome to Sepidar</h1>
-      <p>Premium Exporter of Ribbon-Type Tragacanth Gum</p>
+      <p>Premium Exporter of Tragacanth Gum</p>
     </section>
+    
 
 <section class="info-block">
   <h2>What is Tragacanth Gum?</h2>
